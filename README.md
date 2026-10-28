@@ -52,9 +52,8 @@ Compression and domain shifts can change results substantially.
 
 ## Design notes and validation
 
-This refactors the supplied face-crop experiment into an argument-driven
-report tool. OpenCV's bundled Haar cascade replaces the original MediaPipe
-face detector to keep the detection dependency explicit. There is no video-level
+The report tool uses OpenCV's bundled Haar cascade for frontal-face crops.
+This keeps face detection available through a single explicit dependency. There is no video-level
 accuracy benchmark in this repository. Tests cover missing evidence, sparse
 coverage, label mapping, valid zero scores and invalid classifier output.
 
