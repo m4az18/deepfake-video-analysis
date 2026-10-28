@@ -1,4 +1,4 @@
 opencv-python>=4.12,<5
-pillow>=11,<13
+pillow>=13.0.0,<14
 transformers>=4.57,<6
 torch>=2.6,<3
